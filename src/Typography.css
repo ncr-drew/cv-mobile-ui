@@ -2,8 +2,16 @@
   font-weight: 400;
 }
 
+.typography--weight-medium {
+  font-weight: 500;
+}
+
 .typography--weight-bold {
   font-weight: 700;
+}
+
+.typography--weight-extra-bold {
+  font-weight: 900;
 }
 
 .typography--variant-caps {
@@ -15,5 +23,5 @@
 }
 
 .typography--color-blue {
-  color: #31a9e0;
+  color: #72cffd;
 }

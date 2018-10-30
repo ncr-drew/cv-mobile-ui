@@ -7,17 +7,19 @@ const Box = ({
   children,
   className,
   flex,
-  gradient,
   padding,
   bgColor,
   style,
+  hasBorder,
+  hasShadow,
   ...rest
 }) => (
   <div
     className={classNames('box', styles.className, className, {
-      [`box--gradient-${gradient}`]: gradient,
       [`box--bg-${bgColor}`]: bgColor,
       'box--flex': flex,
+      'box--has-border': hasBorder,
+      'box--has-shadow': hasShadow,
     })}
     style={{ ...style, padding }}
     {...rest}

@@ -3,10 +3,10 @@ import classNames from 'classnames';
 
 import styles from './Button.css';
 
-const Button = ({ children, className, bgColor, ...rest }) => (
+const Button = ({ children, className, variant, ...rest }) => (
   <button
     className={classNames('button', styles.className, className, {
-      [`button--bg-${bgColor}`]: bgColor,
+      [`button--${variant}`]: variant,
     })}
     {...rest}
   >
