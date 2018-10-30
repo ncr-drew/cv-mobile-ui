@@ -34,6 +34,7 @@
 
 .meter-lable-value {
   font-size: 24px;
+  font-weight: 900;
 }
 
 .star {
@@ -97,7 +98,7 @@
  * Large Modifier
  */
 .meter--large .meter-bar {
-  height: 26px;
+  height: 18px;
   margin-right: 60px;
   border-radius: 17px;
   border-width: 4px;
@@ -105,4 +106,12 @@
 
 .meter--large .star {
   font-size: 60px;
+}
+
+.meter--large .meter-label {
+  font-size: 36px;
+}
+
+.meter--large .meter-label-value {
+  font-size: 48px;
 }

@@ -17,10 +17,13 @@ const PointsMeter = ({
 }) => (
   <div className="points-meter">
     <Typography className="meter-label" color="white">
-      <Typography is="span" className="meter-wrap-value">
+      <Typography is="span" className="meter-label-value">
         {value}
-      </Typography>{' '}
-      / {maxValue}
+      </Typography>
+      /
+      <Typography is="span" className="meter-label-max-value">
+        {maxValue}
+      </Typography>
     </Typography>
     <div
       className={classNames('meter', styles.className, className, {
