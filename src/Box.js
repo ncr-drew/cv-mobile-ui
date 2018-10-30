@@ -10,6 +10,7 @@ const Box = ({
   gradient,
   padding,
   bgColor,
+  style,
   ...rest
 }) => (
   <div
@@ -18,7 +19,7 @@ const Box = ({
       [`box--bg-${bgColor}`]: bgColor,
       'box--flex': flex,
     })}
-    style={{ padding }}
+    style={{ ...style, padding }}
     {...rest}
   >
     <div className="box-inner">{children}</div>
@@ -27,6 +28,7 @@ const Box = ({
 
 Box.defaultProps = {
   padding: 16,
+  style: {},
 };
 
 export default Box;

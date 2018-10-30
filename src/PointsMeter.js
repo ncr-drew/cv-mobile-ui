@@ -15,7 +15,11 @@ const PointsMeter = ({
   size,
   ...rest
 }) => (
-  <div className="points-meter">
+  <div
+    className={className('points-meter', className, {
+      [`meter--${size}`]: size,
+    })}
+  >
     <Typography className="meter-label" color="white">
       <Typography is="span" className="meter-label-value">
         {value}
@@ -25,12 +29,7 @@ const PointsMeter = ({
         {maxValue}
       </Typography>
     </Typography>
-    <div
-      className={classNames('meter', styles.className, className, {
-        [`meter--${size}`]: size,
-      })}
-      {...rest}
-    >
+    <div className={classNames('meter', styles.className)} {...rest}>
       <input
         type="range"
         className="meter-bar"
