@@ -20,7 +20,7 @@ const PointsMeter = ({
       [`points-meter--${size}`]: size,
     })}
   >
-    <Typography className="meter-label" color="white">
+    <Typography className="meter-label">
       <Typography is="span" className="meter-label-value">
         {value}
       </Typography>
