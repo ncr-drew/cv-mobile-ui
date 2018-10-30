@@ -1,6 +1,6 @@
 {
   "name": "@ncr/cv-mobile-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -14,9 +14,7 @@
     "url": "git+https://github.com/ncr-drew/cv-mobile-ui.git"
   },
   "keywords": [],
-  "files": [
-    "dist/"
-  ],
+  "files": ["dist/"],
   "author": "",
   "license": "ISC",
   "bugs": {
