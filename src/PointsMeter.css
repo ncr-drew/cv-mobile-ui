@@ -11,9 +11,6 @@
   height: 9px;
   flex: 1;
   margin-right: 35px;
-  border: 2px solid #fff;
-  background-color: #fff;
-  background-image: linear-gradient(#54b948, #54b948);
   background-size: 50% 100%;
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -28,6 +25,16 @@
   border: none;
 }
 
+.meter-label {
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 2px;
+}
+
+.meter-lable-value {
+  font-size: 24px;
+}
+
 .star {
   position: relative;
 
@@ -40,17 +47,15 @@
   margin-bottom: 1.2em;
 
   border-right: 0.3em solid transparent;
-  border-bottom: 0.7em solid #fff;
+  border-bottom: 0.7em solid transparent;
   border-left: 0.3em solid transparent;
 
   /* Controls the size of the stars. */
   font-size: 28px;
 }
 
-.star:before,
-.star:after {
-  content: '';
-
+.star-before,
+.star-after {
   display: block;
   width: 0;
   height: 0;
@@ -60,13 +65,13 @@
   left: -1em;
 
   border-right: 1em solid transparent;
-  border-bottom: 0.7em solid #fff;
+  border-bottom: 0.7em solid transparent;
   border-left: 1em solid transparent;
 
   transform: rotate(-35deg);
 }
 
-.star:after {
+.star-after {
   transform: rotate(35deg);
 }
 
@@ -75,7 +80,6 @@
 }
 
 .meter-star-inner {
-  color: #54b948;
   position: absolute;
   z-index: 1;
   left: -1.2em;
@@ -83,13 +87,20 @@
   transform: scale(0.65);
 }
 
-.meter-star-inner,
-.meter-star-inner:before,
-.meter-star-inner:after {
-  border-bottom-color: #54b948;
-}
-
 .meter-star-wrap {
   position: absolute;
   right: 0;
+}
+
+/**
+ * Large Modifier
+ */
+.meter--large .meter-bar {
+  height: 26px;
+  border-radius: 17px;
+  border-width: 4px;
+}
+
+.meter--large .star {
+  font-size: 68px;
 }

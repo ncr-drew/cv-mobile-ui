@@ -5,6 +5,7 @@ import styles from './Typography.css';
 
 const Typography = ({
   children,
+  className,
   is: Element,
   variant,
   weight,
@@ -12,7 +13,7 @@ const Typography = ({
   ...rest
 }) => (
   <Element
-    className={classNames('typography', styles.className, {
+    className={classNames('typography', className, styles.className, {
       [`typography--weight-${weight}`]: weight,
       [`typography--variant-${variant}`]: variant,
       [`typography--color-${color}`]: color,
