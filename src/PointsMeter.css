@@ -1,0 +1,95 @@
+.meter {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.meter-bar {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 26px;
+  height: 9px;
+  flex: 1;
+  margin-right: 35px;
+  border: 2px solid #fff;
+  background-color: #fff;
+  background-image: linear-gradient(#54b948, #54b948);
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.meter-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.star {
+  position: relative;
+
+  display: inline-block;
+  width: 0;
+  height: 0;
+
+  margin-left: 0.9em;
+  margin-right: 0.9em;
+  margin-bottom: 1.2em;
+
+  border-right: 0.3em solid transparent;
+  border-bottom: 0.7em solid #fff;
+  border-left: 0.3em solid transparent;
+
+  /* Controls the size of the stars. */
+  font-size: 28px;
+}
+
+.star:before,
+.star:after {
+  content: '';
+
+  display: block;
+  width: 0;
+  height: 0;
+
+  position: absolute;
+  top: 0.6em;
+  left: -1em;
+
+  border-right: 1em solid transparent;
+  border-bottom: 0.7em solid #fff;
+  border-left: 1em solid transparent;
+
+  transform: rotate(-35deg);
+}
+
+.star:after {
+  transform: rotate(35deg);
+}
+
+.meter-star {
+  position: relative;
+}
+
+.meter-star-inner {
+  color: #54b948;
+  position: absolute;
+  z-index: 1;
+  left: -1.2em;
+  top: 0.22em;
+  transform: scale(0.65);
+}
+
+.meter-star-inner,
+.meter-star-inner:before,
+.meter-star-inner:after {
+  border-bottom-color: #54b948;
+}
+
+.meter-star-wrap {
+  position: absolute;
+  right: 0;
+}
