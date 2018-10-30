@@ -35,7 +35,7 @@ const PointsMeter = ({
         max={maxValue}
         value={value}
         style={{
-          border: `2px solid ${bgColor}`,
+          borderColor: `${bgColor}`,
           backgroundColor: bgColor,
           backgroundImage: `linear-gradient(${barColor}, ${barColor})`,
           backgroundSize:
