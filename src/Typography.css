@@ -1,0 +1,19 @@
+.typography {
+  font-weight: 400;
+}
+
+.typography--weight-bold {
+  font-weight: 700;
+}
+
+.typography--variant-caps {
+  text-transform: uppercase;
+}
+
+.typography--color-white {
+  color: #fff;
+}
+
+.typography--color-blue {
+  color: #31a9e0;
+}

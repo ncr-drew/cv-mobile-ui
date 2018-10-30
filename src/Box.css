@@ -1,0 +1,30 @@
+.box {
+  padding: 16px;
+  background-color: #fff;
+}
+
+.box--flex {
+  display: flex;
+  flex-flow: column;
+}
+
+.box--flex .box-inner {
+  display: flex;
+  flex-grow: 1;
+}
+
+.box--bg-blue {
+  background-color: #0099bf;
+}
+
+.box--gradient-blue {
+  background-image: radial-gradient(28% 103%, #fff 15%, #bdf2ff 100%);
+}
+
+.box--gradient-orange {
+  background-image: linear-gradient(#fad961 0%, #f76b1c 100%);
+}
+
+.box--gradient-orange-reverse {
+  background-image: linear-gradient(-180deg, #f76b1c 0%, #fad961 100%);
+}
