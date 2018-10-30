@@ -16,8 +16,8 @@ const PointsMeter = ({
   ...rest
 }) => (
   <div
-    className={className('points-meter', className, {
-      [`meter--${size}`]: size,
+    className={classNames('points-meter', className, {
+      [`points-meter--${size}`]: size,
     })}
   >
     <Typography className="meter-label" color="white">
